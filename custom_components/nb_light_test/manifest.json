@@ -14,6 +14,7 @@
   "requirements": [],
   "ssdp": [],
   "zeroconf": [],
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "issue_tracker": "https://github.com/nbielano/nb_light_test/issues"
 }
 
