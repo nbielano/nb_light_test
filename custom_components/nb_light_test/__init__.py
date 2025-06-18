@@ -24,7 +24,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up light_log_test from a config entry."""
 
     # Define test service action
-    def on_and_log(call):
+    async def on_and_log(call):
         """Handle the Service Call"""  # noqa: D400, D415
         name = call.data.get(ATTR_NAME, DEFAULT_NAME)
         color = call.data.get(ATTR_COLOR, DEFAULT_COLOR)
@@ -46,7 +46,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
             on_message = "Light on, " + name + ", No action taken."
             logger.info(on_message)
 
-    hass.services.register(DOMAIN, "on_and_log", on_and_log)
+    hass.services.async_register(DOMAIN, "on_and_log", on_and_log)
 
     await hass.config_entries.async_forward_entry_setups(entry, (Platform.SENSOR,))
 
