@@ -1,0 +1,17 @@
+on_and_log:
+  target:
+    entity:
+      domain: light
+  fields:
+   name:
+    required: true
+    example: "John"
+    default: "Nick"
+    selector:
+      text:
+   color:
+    required: true
+    example: [255, 0, 255]
+    default: [255, 0, 0]
+    selector:
+     color_rgb:
