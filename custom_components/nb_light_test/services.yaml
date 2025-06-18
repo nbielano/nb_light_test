@@ -14,4 +14,4 @@ on_and_log:
     example: [255, 0, 255]
     default: [255, 0, 0]
     selector:
-     color_rgb:
+      color_rgb:
