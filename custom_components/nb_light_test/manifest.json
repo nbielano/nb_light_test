@@ -1,0 +1,19 @@
+{
+  "domain": "nb_light_test",
+  "name": "light_log_test",
+  "codeowners": [
+    "@nbielano"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.home-assistant.io/integrations/nb_light_test",
+  "homekit": {},
+  "integration_type": "helper",
+  "iot_class": "local_polling",
+  "quality_scale": "bronze",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "version": "0.1.0"
+}
+
