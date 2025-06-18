@@ -46,7 +46,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
             on_message = "Light on, " + name + ", No action taken."
             logger.info(on_message)
 
-    hass.services.async_register(DOMAIN, "on_and_log", on_and_log)
+    await hass.services.async_register(DOMAIN, "on_and_log", on_and_log)
 
     await hass.config_entries.async_forward_entry_setups(entry, (Platform.SENSOR,))
 
